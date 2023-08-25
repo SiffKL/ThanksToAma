@@ -1,15 +1,39 @@
 ---
+import "../styles/global.css";
+import Card from "../components/Card.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <!-- <link rel="stylesheet" href="src/styles/reset.css" /> -->
+    <title>Astro</title>
+  </head>
+  <body>
+    <h1>Astro Open Props</h1>
+    <Card
+      img="./src/asset/images/test.jpg"
+      titel="Micro Backpack"
+      description="Are you a minimalist looking for a compact carry option? The micro Backpack is the parfect size for you essential everyday carry items. Wear it like a backpack or carry it like a satchel for all-day use"
+      price="$90.00"
+    />
+    <Card
+      img="./src/asset/images/test-2.jpg"
+      titel="Nomad Shopping Tote"
+      description="This durable shopping tote is perfect for the world traveler. Its yellow canvas construction is water, fray, tear resistant. The matching handle, backpack straps, and shoulder loops procide multiple carry options for a day out on your next adventure"
+      price="$90.00"
+      <
+      Card
+    >
+      />
+    </Card>
+  </body>
+  <style>
+    body {
+      background-color: var(--gray-3);
+    }
+  </style>
 </html>

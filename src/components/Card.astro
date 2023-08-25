@@ -1,0 +1,64 @@
+---
+const { titel, price, description, icon, img } = Astro.props;
+---
+
+<section>
+  <img src={img} alt="Billede" />
+  <div>
+    <div class="titleprice">
+      <h1>{titel}</h1>
+      <h2>{price}</h2>
+    </div>
+    <p>{description}</p>
+  </div>
+  <span>
+    <div>
+      <svg
+        class="delivicon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        viewBox="0 0 24 24"
+      >
+        <g fill="currentColor"
+          ><path
+            d="m9.564 8.73l.515 1.863c.485 1.755.727 2.633 1.44 3.032c.713.4 1.618.164 3.428-.306l1.92-.5c1.81-.47 2.715-.705 3.127-1.396c.412-.692.17-1.57-.316-3.325l-.514-1.862c-.485-1.756-.728-2.634-1.44-3.033c-.714-.4-1.619-.164-3.429.307l-1.92.498c-1.81.47-2.715.706-3.126 1.398c-.412.691-.17 1.569.315 3.324Z"
+          ></path><path
+            d="M2.277 5.247a.75.75 0 0 1 .924-.522l1.703.472A2.707 2.707 0 0 1 6.8 7.075l2.151 7.786l.158.546c.633.237 1.177.68 1.522 1.268l.31-.096l8.87-2.305a.75.75 0 1 1 .378 1.452l-8.838 2.296l-.328.102c-.007 1.27-.884 2.431-2.21 2.776c-1.591.414-3.226-.502-3.652-2.044c-.426-1.543.518-3.129 2.108-3.542a3.35 3.35 0 0 1 .237-.052L5.354 7.474a1.207 1.207 0 0 0-.85-.831L2.8 6.17a.75.75 0 0 1-.523-.923Z"
+          ></path></g
+        >
+      </svg>
+      <svg
+        class="checkicon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        viewBox="0 0 24 24"
+        ><path
+          fill="currentColor"
+          d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4l4.25 4.25ZM12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z"
+        ></path></svg
+      >
+      <h3>delivery</h3>
+      <a href="">View product</a>
+    </div>
+  </span>
+
+  <style>
+    section {
+      background-color: var(--gray-1);
+      padding: var(--size-3);
+      /* gap: var(--size-6); */
+    }
+
+    img {
+      height: var(--size-12);
+    }
+
+    .titelprice {
+      display: flex;
+
+      align-items: ;
+    }
+  </style>
+</section>
