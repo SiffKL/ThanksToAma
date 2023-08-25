@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import Card from "../components/Card.astro";
+import { Icon } from "astro-icon/components";
 ---
 
 <html lang="en">
@@ -13,6 +14,8 @@ import Card from "../components/Card.astro";
     <title>Astro</title>
   </head>
   <body>
+    <!-- <Icon name="mdi:weight-lifter" /> -->
+    <Icon name="mdi:account-lock-open" />
     <h1>Astro Open Props</h1>
     <Card
       img="./src/asset/images/test.jpg"
@@ -25,15 +28,14 @@ import Card from "../components/Card.astro";
       titel="Nomad Shopping Tote"
       description="This durable shopping tote is perfect for the world traveler. Its yellow canvas construction is water, fray, tear resistant. The matching handle, backpack straps, and shoulder loops procide multiple carry options for a day out on your next adventure"
       price="$90.00"
-      <
-      Card
-    >
-      />
-    </Card>
-  </body>
-  <style>
+    />
+  </body><style>
     body {
       background-color: var(--gray-3);
+    }
+
+    h1 {
+      padding: 3rem;
     }
   </style>
 </html>
